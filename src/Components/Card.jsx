@@ -1,10 +1,18 @@
 import React from "react"
+import './Card.css'
 
-const Card = () => {
+const Card = ({ estudiante }) => {
   return (
+
     <div className="card">
-      <h1>Hola, soy una tarjeta</h1>
+
+      <div className="item">
+        <li >Nombre - {estudiante.nombre}</li>
+        <li >Apellido - {estudiante.apellido}</li>
+      </div>
+      
     </div>
+
   )
 }
 
